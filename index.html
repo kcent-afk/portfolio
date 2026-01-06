@@ -1,0 +1,244 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Portfolio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+:root{
+    --bg:#0f172a;
+    --card:#111827;
+    --accent:#3b82f6;
+    --muted:#9ca3af;
+    --text:#e5e7eb;
+    --radius:18px;
+    --shadow:0 14px 36px rgba(0,0,0,0.6);
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.9;
+}
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:40px 24px;
+}
+.hero-content{
+    max-width:700px;
+}
+.avatar{
+    width:220px;
+    height:220px;
+    margin:0 auto 32px;
+    border-radius:50%;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    border:4px solid rgba(255,255,255,0.08);
+}
+.avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.hero h1{
+    font-size:2.3rem;
+}
+.hero .muted{
+    margin-top:18px;
+    font-size:1.1rem;
+    color:var(--muted);
+}
+.scroll-down{
+    margin-top:60px;
+    color:var(--muted);
+    font-size:0.9rem;
+    letter-spacing:1px;
+}
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:90px 24px;
+}
+.section-box{
+    background:var(--card);
+    padding:46px;
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    border:1px solid rgba(255,255,255,0.06);
+    margin-bottom:70px;
+}
+h3{
+    font-size:1.35rem;
+    margin-bottom:26px;
+    border-bottom:3px solid var(--accent);
+    display:inline-block;
+    padding-bottom:6px;
+}
+.muted{
+    color:var(--muted);
+}
+.about p{
+    font-size:1.05rem;
+    margin-bottom:36px;
+}
+.skills{
+    display:flex;
+    gap:16px;
+    flex-wrap:wrap;
+    margin-top:22px;
+}
+.skill{
+    background:rgba(59,130,246,0.15);
+    color:#bfdbfe;
+    padding:14px 22px;
+    border-radius:999px;
+    font-size:0.95rem;
+    border:1px solid rgba(59,130,246,0.25);
+}
+.edu{
+    margin-bottom:40px;
+}
+.edu:last-child{
+    margin-bottom:0;
+}
+.edu h4{
+    margin-bottom:14px;
+    font-size:1.1rem;
+}
+.buttons{
+    margin-top:28px;
+}
+a.button{
+    display:inline-block;
+    background:var(--accent);
+    color:#fff;
+    padding:18px 26px;
+    border-radius:14px;
+    text-decoration:none;
+    font-weight:600;
+    margin-right:16px;
+    margin-top:14px;
+    transition:transform 0.2s ease, box-shadow 0.2s ease;
+}
+a.button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 25px rgba(59,130,246,0.4);
+}
+.contact-list{
+    display:flex;
+    flex-direction:column;
+    gap:28px;
+}
+.contact-item{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+.contact-item i{
+    font-size:1.3rem;
+    color:var(--accent);
+    width:28px;
+    text-align:center;
+}
+footer{
+    text-align:center;
+    color:var(--muted);
+    font-size:1rem;
+    margin-top:100px;
+}
+</style>
+</head>
+<body>
+<section class="hero">
+    <div class="hero-content">
+        <div class="avatar">
+            <img src="images/PROFILE.png" alt="Profile">
+        </div>
+        <h1>Carl Vincent Andrei Buan</h1>
+        <div class="muted">IT Student · keep it simple</div>
+        <div class="scroll-down">
+            SCROLL DOWN FOR MORE
+        </div>
+    </div>
+</section>
+<div class="container">
+<section class="section-box about">
+    <h3>About Me</h3>
+    <p>
+        Responsible and motivated individual
+        seeking a job opportunity that matches my
+        skills and qualifications. Eager to learn,
+        collaborate with a team, and grow
+        professionally.
+    </p>
+    <div class="buttons">
+        <a class="button" href="files/resumeBuan.pdf" download style="background:#10b981">
+            <i class="fa-solid fa-download"></i> Download Resume
+        </a>
+    </div>
+</section>
+<section class="section-box">
+    <h3>Skills</h3>
+    <div class="skills">
+        <span class="skill">Microsoft Office</span>
+        <span class="skill">Photoshop</span>
+        <span class="skill">Illustrator</span>
+        <span class="skill">Web Design</span>
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+    </div>
+</section>
+<section class="section-box">
+    <h3>Education</h3>
+    <div class="edu">
+        <h4>Information Technology</h4>
+        <div class="muted">AIMS Training and Assessment Center — 2024–Present</div>
+    </div>
+    <div class="edu">
+        <h4>Senior High School — TVL-Home Economics</h4>
+        <div class="muted">Partida National High School — 2021–2023</div>
+    </div>
+</section>
+<section class="section-box">
+    <h3>Contact</h3>
+    <div class="contact-list">
+        <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+                <strong>Email</strong>
+                <div class="muted">zvincentbuan@gmail.com</div>
+            </div>
+        </div>
+        <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+                <strong>Phone</strong>
+                <div class="muted">+63 963 270 6695</div>
+            </div>
+        </div>
+        <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+                <strong>Location</strong>
+                <div class="muted">Bulacan, Philippines</div>
+            </div>
+        </div>
+        <a class="button" href="mailto:zvincentbuan@gmail.com" style="width:fit-content">
+            <i class="fa-solid fa-paper-plane"></i> Email Me
+        </a>
+    </div>
+</section>
+<footer>
+©  Carl Vincent Andrei Buan. All rights reserved.
+</footer>
+</div>
+</body>
+</html>
